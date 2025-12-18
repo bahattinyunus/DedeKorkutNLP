@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software in your research, please cite it as below."
+authors:
+  - family-names: "Yunus"
+    given-names: "Bahattin"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+title: "DedeKorkutNLP: A Visionary Turkish Natural Language Processing Library"
+version: 0.1.0
+date-released: 2024-01-01
+url: "https://github.com/bahattinyunus/DedeKorkutNLP"
+preferred-citation:
+  type: software
+  authors:
+  - family-names: "Yunus"
+    given-names: "Bahattin"
+  title: "DedeKorkutNLP: Bridging Traditional Wisdom and Modern AI"
+  year: 2024

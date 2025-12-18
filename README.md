@@ -1,47 +1,53 @@
-![CI](https://github.com/bahattinyunus/DedeKorkutNLP/actions/workflows/ci.yml/badge.svg)
-![License](https://img.shields.io/badge/license-MIT-green)
-![Python](https://img.shields.io/badge/python-3.7%20%7C%203.8%20%7C%203.9%20%7C%203.10%20%7C%203.11-blue)
 
+# 🌌 DedeKorkutNLP: Geçmişin Hikmeti, Geleceğin Zekası
 
+![Dede Korkut Cyber Sage](assets/banners/hero_banner.png)
 
-# 🌟 DedeKorkutNLP – Türkçe NLP’nin Gücü Elinde
+<div align="center">
 
-![Python Version](https://img.shields.io/badge/python-3.7%2B-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge&color=00ADB5)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg?style=for-the-badge&logo=python&logoColor=white&color=00ADB5)](https://www.python.org/)
+[![Status](https://img.shields.io/badge/Status-Visionary-blue.svg?style=for-the-badge&color=FFD700)](https://github.com/bahattinyunus/DedeKorkutNLP)
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=for-the-badge&color=00ADB5)](CONTRIBUTING.md)
 
-**DedeKorkutNLP**, Türkçe doğal dil işleme (NLP) projelerinde seni bir üst seviyeye taşıyacak bir Python kütüphanesidir. Türkçe’nin tüm inceliklerini hesaba katan araçlar, metin ön işleme fonksiyonları, değerlendirme metrikleri ve esnek tasarımı ile araştırma ve geliştirmeyi **hikayeleştirir gibi** kolaylaştırır.
-
-Bu kütüphane, tıpkı Dede Korkut’un destanlarını anlatır gibi, **her kelimeyi doğru, her cümleyi anlamlı bir şekilde işler**.
-
----
-
-## ⚡ Öne Çıkan Özellikler
-
-* **Metin Ön İşleme**
-
-  * Türkçe karakterleri normalleştirme: `İ/ı`, `Ş/ş`, `Ç/ç`… hiçbiri gözünden kaçmaz.
-  * Noktalama işaretlerini temizleme: Sadece anlam ve içerik kalır.
-  * Tokenizasyon: Cümleleri ve kelimeleri en doğru şekilde parçalara ayırır.
-
-* **Değerlendirme Metrikleri**
-
-  * ROUGE, WER (Word Error Rate), CER (Character Error Rate) gibi temel NLP metriklerini hesaplama.
-  * Modüler ve genişletilebilir: Kendi metriklerin veya AI modellerinle entegre etmesi kolay.
-
-* **Esnek ve Geliştirilebilir Tasarım**
-
-  * Yeni modeller eklemek veya mevcut araçları geliştirmek için ideal bir yapı.
-  * Araştırmacılar ve geliştiriciler için “plug-and-play” deneyimi.
-
-* **CLI & Script Desteği** *(gelişmekte olan)*
-
-  * Model değerlendirme ve metin analizi için hazır komut satırı araçları.
+</div>
 
 ---
 
-## 🚀 Kurulum
+<div align="center">
+  <h3>
+    <a href="MANIFESTO.md">📜 Okuyun: DedeKorkutNLP Manifestosu</a>
+  </h3>
+  <p><em>"Bir yapay zeka sadece metin üretmez; kültürün kodlarını geleceğe taşır."</em></p>
+</div>
 
-Kütüphaneyi yerel olarak kurmak çok kolay:
+---
+
+## � Vizyon (The Vision)
+
+**DedeKorkutNLP**, sıradan bir doğal dil işleme kütüphanesi değildir. O, Türkçenin derin, karmaşık ve şiirsel yapısını dijital çağa taşıyan bir **"Bilge Ajan"**dır (Sage Agent).
+
+Bin yıl önce Dede Korkut, kopuzuyla Oğuz boylarının hikayelerini anlatırdı. Bugün, DedeKorkutNLP algoritmalarıyla veriden hikmet süzüyor.
+
+**Misyonumuz:**
+> Türkçe NLP çalışmalarını "tak-çalıştır" kolaylığına indirgemek değil, ona bir **ruh** katmaktır.
+
+---
+
+## 🚀 Özellikler (Features)
+
+| Özellik | Açıklama |
+| :--- | :--- |
+| **🛡️ Linguistic Fortress** | Türkçenin eklemeli yapısına (agglutinative) uygun, kaya gibi sağlam tokenizasyon ve kök bulma. |
+| **⚡ Cyber-Speed Metrics** | ROUGE, BLEU, WER ve CER hesaplamalarında optimize edilmiş hız. |
+| **🧠 Wisdom Engine** | Modern LLM'ler (GPT, Llama) ile entegre çalışabilen "Prompt Mühendisliği" şablonları. |
+| **📜 Digital Corpus** | (Yakında) Temizlenmiş, etiketlenmiş ve analize hazır devasa Türkçe veri setleri. |
+
+---
+
+## � Kurulum (Installation)
+
+Geleceğe bir adım atın:
 
 ```bash
 git clone https://github.com/bahattinyunus/DedeKorkutNLP.git
@@ -49,410 +55,72 @@ cd DedeKorkutNLP
 pip install .
 ```
 
-> İpucu: Sanal ortam kullanmak her zaman güvenlidir. Python 3.7 ve üzeri önerilir.
-
 ---
 
-## ✨ Kullanım Örnekleri
+## ⚡ Hızlı Başlangıç (Quick Start)
 
-### 1️⃣ Metin Ön İşleme
+### Bir Hikaye Başlatın
 
 ```python
-from dedekorkut.preprocessing import normalize_text, remove_punctuation, tokenize_text
+from dedekorkut import DedeKorkut
 
-text = "İSTANBUL, harika bir şehir! 🌟"
-normalized = normalize_text(text)
-print(normalized)
-# Output: istanbul, harika bir şehir! 🌟
+# Bilgeyi Çağır
+dk = DedeKorkut()
 
-clean = remove_punctuation(normalized)
-print(clean)
-# Output: istanbul harika bir şehir 🌟
+# Metni İşle (The Rite of Preprocessing)
+text = "Gelecek, köklerine bağlı olanların elinde yükselecektir."
+processed = dk.preprocess(text, mode="deep_clean")
 
-tokens = tokenize_text(clean)
-print(tokens)
-# Output: ['istanbul', 'harika', 'bir', 'şehir', '🌟']
+print(f"🔮 Arınmış Metin: {processed}")
 ```
 
-### 2️⃣ Değerlendirme Metrikleri
+### Hikmeti Ölçün (Evaluation)
 
 ```python
-from dedekorkut.evaluation import calculate_wer, calculate_cer, calculate_rouge
+from dedekorkut.metrics import calculate_wisdom_score
 
-reference = "Bugün hava çok güzel"
-hypothesis = "Bugün hava güzel"
+reference = "Yapay zeka insanlığın hizmetindedir."
+hypothesis = "Yapay zeka insanlara yardım eder."
 
-wer = calculate_wer(reference, hypothesis)
-cer = calculate_cer(reference, hypothesis)
-rouge = calculate_rouge(reference, hypothesis)
-
-print(f"WER: {wer}, CER: {cer}, ROUGE: {rouge}")
+score = calculate_wisdom_score(reference, hypothesis)
+print(f"✨ Bilgelik Skoru (Semantic Similarity): {score}")
 ```
 
 ---
 
-## 🛠️ Model ve Değerlendirme Scriptleri
+## �️ Yol Haritası (Roadmap)
 
-Hazır bir modeli veya checkpoint’i değerlendirmek mi istiyorsun? Basit:
-
-```bash
-python -m dedekorkut.evaluation --model checkpoints/best_model
-```
-
-> Not: CLI desteği geliştirme aşamasında. Ama hazır, basit ve güçlü bir yapı seni bekliyor.
-
----
-
-## 🤝 Katkıda Bulunmak
-
-DedeKorkutNLP topluluğu **her zaman yeni kahramanlar arıyor**. Kod yaz, hata düzelt, yeni özellik ekle veya sadece fikir paylaş:
-
-* Adım 1: Fork yap
-* Adım 2: Değişikliklerini commit et
-* Adım 3: Pull request gönder
-
-Detaylar için [CONTRIBUTING.md](CONTRIBUTING.md) dosyasına bakabilirsin.
-
----
-
-## 📜 Lisans
-
-Bu proje **MIT Lisansı** altında lisanslanmıştır. Daha fazla bilgi için [LICENSE](LICENSE) dosyasına göz atabilirsin.
-
----
-
-## 🌐 Neden DedeKorkutNLP?
-
-* Türkçe NLP’de **hızlı başlangıç** yapmak isteyenler için ideal.
-* Araştırma ve geliştirmede **esnek ve güçlü** bir yapı sunar.
-* AI ve NLP projelerinde **çapraz disiplin desteği** sağlar.
-* Kod ve metinleri işlerken **destansı bir güven** verir.
-
-
-# 🌟 DedeKorkutNLP – Part 2: Advanced Features & AI Integration
-
-DedeKorkutNLP sadece basit metin temizleme ve temel metriklerle sınırlı değil. Asıl gücü, **AI ile birleştiğinde ortaya çıkan devrimde** yatıyor. Bu bölümde, gelişmiş kullanım örneklerini ve AI entegrasyonunu göreceksin.
-
----
-
-## ⚡ 1️⃣ Gelişmiş Metin Ön İşleme
-
-Türkçe’nin incelikleri bazen klasik tokenizasyon ve temizleme yöntemleriyle yakalanamaz. DedeKorkutNLP, bunu biliyor ve ekstra özellikler sunuyor:
-
-* **Lemmatization & Stemming**: Kelimeleri köklerine indirir, varyasyonları tek bir forma çeker.
-* **Stopwords Removal**: “ve, ile, bu, şu” gibi anlamsal olarak önemsiz kelimeleri filtreler.
-* **Emoji & Symbol Handling**: Sosyal medya metinlerinde veya chat verilerinde emoji ve özel karakterleri anlamlı bir şekilde işler.
-
-```python
-from dedekorkut.preprocessing import lemmatize_text, remove_stopwords
-
-text = "İstanbul harika bir şehir, değil mi? 😎"
-lemmas = lemmatize_text(text)
-print(lemmas)
-# Output: ['istanbul', 'harika', 'bir', 'şehir', 'değil', 'mi', '😎']
-
-cleaned = remove_stopwords(lemmas)
-print(cleaned)
-# Output: ['istanbul', 'harika', 'şehir', 'değil', '😎']
+```mermaid
+graph LR
+    A[Past: The Legend] -->|Wisdom| B(Present: The Code)
+    B -->|Innovation| C{Future: The AGI}
+    C -->|Integration| D[v1.0: Foundation]
+    C -->|Expansion| E[v2.0: Cyber-Corpus]
+    C -->|Transcendence| F[v3.0: Digital Ozan]
+    
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#bbf,stroke:#333,stroke-width:2px
+    style C fill:#bfb,stroke:#333,stroke-width:4px
+    style F fill:#gold,stroke:#333,stroke-width:2px,stroke-dasharray: 5, 5
 ```
 
 ---
 
-## 🤖 2️⃣ AI Entegrasyonu
+## 🤝 Katkıda Bulunma (Contribution)
 
-DedeKorkutNLP, AI modelleriyle doğrudan entegre olacak şekilde tasarlandı. Bu sayede:
+Biz kod yazmıyoruz, **tarih yazıyoruz**.
 
-* Metin sınıflandırma
-* Sentiment analizi
-* Özetleme ve soru-cevap
-* Otomatik metin üretimi
+Eğer bu destana bir satır eklemek isterseniz, [CONTRIBUTING.md](CONTRIBUTING.md) dosyasındaki "Onur Yasası"nı (Code of Honor) okuyun.
 
-gibi görevleri **saniyeler içinde** yapabilirsin.
-
-```python
-from dedekorkut.ai import AITextGenerator
-
-generator = AITextGenerator(model="turkish-gpt-small")
-prompt = "Dede Korkut hikayesi tarzında kısa bir giriş yaz."
-result = generator.generate(prompt, max_length=100)
-print(result)
-```
-
-> Output örneği:
-> *“Ulu dağların ardında, rüzgârın sesiyle dalgalanan ovalar vardı. Kervanlar gelir, destanlar anlatılırdı…”*
-
-AI modülleri hem **önceden eğitilmiş modelleri kullanabilir** hem de kendi verinle **fine-tune edilebilir**.
+### Akademik Atıf
+Bu kütüphaneyi çalışmalarınızda kullanırsanız, lütfen atıf yapın: [CITATION.cff](CITATION.cff)
 
 ---
 
-## 📊 3️⃣ Gelişmiş Değerlendirme & Analiz
+<div align="center">
 
-DedeKorkutNLP, sadece WER veya CER ile sınırlı değil. AI destekli metrikler sayesinde:
+**[GitHub](https://github.com/bahattinyunus) • [LinkedIn](#) • [Documentation](#)**
 
-* **Semantic Similarity**: Cümlelerin anlam olarak ne kadar benzer olduğunu ölçer.
-* **Context-aware ROUGE**: Sadece kelime eşleşmesine değil, anlam bütünlüğüne bakar.
-* **Dynamic Evaluation Pipelines**: Farklı modelleri aynı veri üzerinde karşılaştırmanı sağlar.
+*"Yerli ve Milli NLP'nin Sesi"*
 
-```python
-from dedekorkut.evaluation import semantic_similarity
-
-ref = "Bugün hava çok güzel."
-hyp = "Hava bugün gerçekten harika."
-similarity_score = semantic_similarity(ref, hyp)
-print(f"Semantic Similarity: {similarity_score}")
-```
-
----
-
-## 🔧 4️⃣ Özelleştirilebilir ve Modüler Yapı
-
-DedeKorkutNLP, geliştiriciler için **plug-and-play** bir yapı sunar:
-
-* Yeni AI modellerini kolayca entegre edebilirsin.
-* Ön işleme ve metrik modüllerini kendi pipeline’ına ekleyebilirsin.
-* CLI ve API ile hem script tabanlı hem de web tabanlı projelerde kullanabilirsin.
-
----
-
-## 📚 5️⃣ Gelecek Planları
-
-* **Web API Desteği**: Metin işleme ve AI özelliklerini REST API üzerinden sunmak.
-* **Daha Fazla AI Modeli**: GPT, LLaMA, BLOOM gibi modelleri Türkçe’ye optimize etmek.
-* **Topluluk Katkısı**: Kullanıcılar kendi metriklerini ve AI modüllerini paylaşabilecek.
-
----
-
-## 🌐 Sonuç
-
-DedeKorkutNLP, Türkçe NLP’de **basitten ileriye, AI ile birleşmiş devrim niteliğinde bir araçtır**. Hem araştırmacı hem geliştirici hem de AI meraklısıysan, bu kütüphane seni **destansı bir NLP yolculuğuna çıkarır**.
-
-* Metinleri işlemek
-* AI ile analiz etmek
-* Modüler sistemlerle projeni büyütmek
-
-
-
-# 🌟 DedeKorkutNLP – Part 3: Tutorials & Example Projects
-
-Bu bölüm, DedeKorkutNLP’yi gerçek dünyada nasıl kullanabileceğini **adım adım** gösteren mini projeler içeriyor. Hem başlangıç seviyesine uygun hem de AI destekli ileri seviye örnekler ekledim.
-
-Hazırsan başlıyoruz 👇
-
----
-
-# 🎒 1️⃣ Hızlı Başlangıç – “Hello NLP”
-
-Bu mini örnek, DedeKorkutNLP’nin temel modülleriyle tanışmanı sağlar.
-Tamamen “ben bu kütüphaneyi iki dakikada çözmek istiyorum” diyenler için.
-
-```python
-from dedekorkut.preprocessing import normalize_text, tokenize_text
-from dedekorkut.evaluation import calculate_wer
-
-ref = "Merhaba dünya bugün çok güzel."
-hyp = "Merhaba dunya bugun cok guzel."
-
-# Normalize
-ref_n = normalize_text(ref)
-hyp_n = normalize_text(hyp)
-
-# Tokenize
-ref_tokens = tokenize_text(ref_n)
-hyp_tokens = tokenize_text(hyp_n)
-
-# Evaluate
-wer = calculate_wer(ref_n, hyp_n)
-
-print("Reference Tokens:", ref_tokens)
-print("Hypothesis Tokens:", hyp_tokens)
-print("WER Score:", wer)
-```
-
----
-
-# 📘 2️⃣ Tutorial: Türkçe Metin Temizleme Pipeline’ı
-
-Bu örnekte sosyal medyadan alınmış karmaşık bir cümleyi temizleyip, analiz edilebilir hale getiriyoruz.
-
-```python
-from dedekorkut.preprocessing import (
-    normalize_text, 
-    remove_punctuation, 
-    remove_stopwords, 
-    tokenize_text
-)
-
-tweet = "İstannbuLllll ÇOK iyi yaaa!!! 😂🔥 #istanbul #harika"
-
-# Normalize
-norm = normalize_text(tweet)
-
-# Remove punctuation
-no_punc = remove_punctuation(norm)
-
-# Tokenize
-tokens = tokenize_text(no_punc)
-
-# Remove stopwords
-clean_tokens = remove_stopwords(tokens)
-
-print("Final Tokens:", clean_tokens)
-```
-
-Bu sonuç, tüm pre-process aşamalarından geçmiş temiz bir token listesi verecek.
-Analiz modelleri için **altın değerinde**.
-
----
-
-# 🤖 3️⃣ AI Destekli Mini Proje: “Dede Korkut Tarzı Metin Üretimi”
-
-Bu örnekte AI modülünü kullanıp destansı bir üslupta metin üretiyoruz.
-*(Model adını placeholder olarak bıraktım, kendi modelini bağlayabilirsin.)*
-
-```python
-from dedekorkut.ai import AITextGenerator
-
-generator = AITextGenerator(model="turkish-gpt-small")
-
-prompt = "Dede Korkut hikayeleri tarzında bir savaş sahnesi betimle."
-
-output = generator.generate(prompt, max_length=150)
-
-print(output)
-```
-
-Bu tarz kullanım sosyal medya projeleri, yaratıcı yazma araçları, oyun diyalog sistemleri vs. için şahane.
-
----
-
-# 📊 4️⃣ Tutorial: Model Karşılaştırma – “Hangi model daha iyi?”
-
-Aynı referans üzerinde iki AI modelinin performansını kıyaslayalım.
-
-```python
-from dedekorkut.evaluation import semantic_similarity
-
-reference = "Bugün rüzgar hafif ama hava oldukça serin."
-model1_out = "Bugün hava serin ve rüzgar hafif."
-model2_out = "Sıcaklık yüksek ama rüzgar çok."
-
-sim1 = semantic_similarity(reference, model1_out)
-sim2 = semantic_similarity(reference, model2_out)
-
-print("Model 1 Similarity:", sim1)
-print("Model 2 Similarity:", sim2)
-```
-
-Bu pipeline, araştırma projelerinde model seçimi için mükemmel bir template.
-
----
-
-# 🔥 5️⃣ Mini Proje: “Türkçe Özetleme Pipeline'ı”
-
-Bu proje, uzun metinleri önce temizleme → AI ile özetleme adımlarından geçirir.
-
-```python
-from dedekorkut.preprocessing import normalize_text, remove_punctuation
-from dedekorkut.ai import AITextGenerator
-
-text = """
-Türkiye’nin teknoloji ekosistemi son yıllarda büyük bir dönüşüm içinde.
-Yeni girişimler, yapay zeka teknolojileri ve yerli üretim atılımları 
-ülkenin dijital geleceğini şekillendiriyor...
-"""
-
-# Preprocess
-clean = remove_punctuation(normalize_text(text))
-
-# Summarize
-ai = AITextGenerator(model="turkish-gpt-small")
-summary = ai.generate(f"Bu metni akademik bir tarzda özetle:\n{clean}", max_length=100)
-
-print(summary)
-```
-
----
-
-# ⚙️ 6️⃣ Pipeline Builder – Kendi NLP hattını oluştur
-
-DedeKorkutNLP modülleri lego gibi birleşir.
-İstersen kendi pipeline’ını oluşturabilirsin:
-
-```python
-from dedekorkut.pipeline import Pipeline
-from dedekorkut.preprocessing import normalize_text, tokenize_text
-from dedekorkut.evaluation import calculate_cer
-
-pipeline = Pipeline([
-    normalize_text,
-    tokenize_text
-])
-
-processed = pipeline.run("İstanbul çok güzel bir şehir.")
-print(processed)
-```
-
-Pipeline yapısı:
-
-* chatbot geliştirmek
-* dataset hazırlamak
-* NLP modelleri eğitmek
-
-için **geliştirici dostu** bir temel sunar.
-
----
-
-# 🌐 7️⃣ Gerçek Dünya Projesi: “Türkçe Makale Değerlendirme Aracı”
-
-Bu komple örnek bir proje yapısıdır:
-
-```
-project/
-│
-├── data/
-│   ├── articles.txt
-│
-├── model/
-│   ├── summaries/
-│   ├── model_output.txt
-│
-├── app.py
-└── evaluate.py
-```
-
-### app.py
-
-```python
-from dedekorkut.preprocessing import normalize_text
-from dedekorkut.ai import AITextGenerator
-
-ai = AITextGenerator(model="turkish-gpt-small")
-
-with open("data/articles.txt", "r", encoding="utf-8") as f:
-    article = f.read()
-
-clean = normalize_text(article)
-summary = ai.generate(f"Bu metni akademik olarak özetle:\n{clean}", max_length=200)
-
-with open("model/model_output.txt", "w", encoding="utf-8") as f:
-    f.write(summary)
-```
-
-### evaluate.py
-
-```python
-from dedekorkut.evaluation import calculate_rouge
-
-# Read real summary & model summary
-ref = open("data/reference_summary.txt").read()
-hyp = open("model/model_output.txt").read()
-
-rouge_score = calculate_rouge(ref, hyp)
-
-print("ROUGE Score:", rouge_score)
-```
-
----
-
-# 🎉 Sonuç – Artık DedeKorkutNLP’nin ustasısın
-
+</div>
